@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		730A71CB17963185005DE8BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730A71CA17963185005DE8BA /* Cocoa.framework */; };
 		730A71D517963185005DE8BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 730A71D317963185005DE8BA /* InfoPlist.strings */; };
+		730A71E21796324F005DE8BA /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 730A71E11796324F005DE8BA /* JRSwizzle.m */; };
+		734B717B1796355600632294 /* NSWorkspace+openLinkHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 734B717A1796355600632294 /* NSWorkspace+openLinkHack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,10 @@
 		730A71D217963185005DE8BA /* TwitterOpenLinkHack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterOpenLinkHack-Info.plist"; sourceTree = "<group>"; };
 		730A71D417963185005DE8BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		730A71D617963185005DE8BA /* TwitterOpenLinkHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterOpenLinkHack-Prefix.pch"; sourceTree = "<group>"; };
+		730A71E01796324F005DE8BA /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		730A71E11796324F005DE8BA /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		734B71791796355600632294 /* NSWorkspace+openLinkHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+openLinkHack.h"; sourceTree = "<group>"; };
+		734B717A1796355600632294 /* NSWorkspace+openLinkHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace+openLinkHack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +79,10 @@
 		730A71D017963185005DE8BA /* TwitterOpenLinkHack */ = {
 			isa = PBXGroup;
 			children = (
+				730A71DF1796324F005DE8BA /* jrswizzle */,
 				730A71D117963185005DE8BA /* Supporting Files */,
+				734B71791796355600632294 /* NSWorkspace+openLinkHack.h */,
+				734B717A1796355600632294 /* NSWorkspace+openLinkHack.m */,
 			);
 			path = TwitterOpenLinkHack;
 			sourceTree = "<group>";
@@ -86,6 +95,15 @@
 				730A71D617963185005DE8BA /* TwitterOpenLinkHack-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		730A71DF1796324F005DE8BA /* jrswizzle */ = {
+			isa = PBXGroup;
+			children = (
+				730A71E01796324F005DE8BA /* JRSwizzle.h */,
+				730A71E11796324F005DE8BA /* JRSwizzle.m */,
+			);
+			path = jrswizzle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				730A71E21796324F005DE8BA /* JRSwizzle.m in Sources */,
+				734B717B1796355600632294 /* NSWorkspace+openLinkHack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,7 @@
 				730A71DB17963185005DE8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
